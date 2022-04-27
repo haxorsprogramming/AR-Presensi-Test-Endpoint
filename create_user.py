@@ -2,15 +2,16 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-incomes = [
-  { 'description': 'salary', 'amount': 5000 }
+data_user = [
+  { 'usernam': 'admin', 'password': 'admin', 'email' : 'admin@gmail.com' }
 ]
 
 
 @app.route("/")
 def hello_world():
-  return "Hello, World!"
+  return "AR REST API!!!"
 
-@app.route('/incomes')
-def get_incomes():
+
+@app.route('/data_user')
+def get_user():
   return jsonify(incomes)

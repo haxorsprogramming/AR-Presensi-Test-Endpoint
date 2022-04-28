@@ -9,7 +9,7 @@ data_user = [
 
 @app.route("/")
 def hello_world():
-  return "AR REST API!!!"
+  return "AR REST API!!!, Keep Smile"
 
 
 @app.route('/data_user')
